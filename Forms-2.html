@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="Rafi" content="HTMl LEARNING">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://www.w3schools.com/" target="_blank">
+        <title>Form Elements</title>
+        <link rel="icon" type="image/x-icon" href="/images/python.gif">
+        <style>
+
+            </style>
+    </head>
+<body>
+    
+    <h1>Form Elements</h1>
+    <!-- Output  -->
+    <form action="/action_page.php" 
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100+
+    <input type="range" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+    </form>
+    <!-- Date with min & max values set -->
+    <form>
+        <label for="datemax">Enter a date before 01-01-1990:</label>
+        <input type="date" id="datmax" autofocus name="datemax" max="1990-01-01"><br><br>
+        <label for="datemin">Enter a date after 01-01-2000:</label>
+        <input type="date" id="datmin" name="datemin" min="2000-01-01"><br><br>
+        <!-- date with time -->
+        <label for="birthday">Birthday (date & Time):</label>
+        <input type="datetime-local" id="birthday" name="birthday"><br><br>
+        <!-- email type input -->
+        <label for="email">Enter Email</label>
+        <input type="email" id="email" name="email"><br><br>
+        <!-- file type input -->
+        <label for="file">choose a file</label>
+        <input type="file" id="file" name="file"><br><br>
+        <!-- search type input -->
+        <form>
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+            <input type="submit">
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678"><br>
+            <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage"><br>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week"><br>
+
+    </form>
+    <!--Form encode only apply on forms with post method-->
+    <form action="/action_page_binary.asp" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data"
+        value="Submit as Multipart/form-data">
+      </form>
+</body>               
+</html>

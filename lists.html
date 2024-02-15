@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>lists</title>
+        <link rel="icon" type="image/x-icon" href="/images/python.gif">
+        <style>
+            ul {
+                /* list-style-type: disc; */
+                /* list-style-type: none; */
+                list-style-type: square;
+                /* list-style-type:circle; */
+            }
+            ul:nth-child(odd) {
+                list-style-type: circle;
+            }
+            #nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            #nav li {
+                float:right;
+
+            }
+            #nav li a{
+                display: block;
+                color:white;
+                text-align:center;
+                padding:16px;
+                text-decoration: none;
+            }
+            #nav li a:hover {
+                background-color: #c5b3b3;
+                color:black
+            }
+        </style>
+    </head>
+    <div id="nav">
+        <ul>
+            <li><a href="#home">Home </a></li>
+            <li><a href="#News">News </a></li>
+            <li><a href="#Contacts">Contacts </a></li>
+            <li><a href="#About">About </a></li>
+            
+        </ul>
+    </div>
+
+    <h1>Un Ordered List example</h1>
+    <ul>
+    <li>First Item 
+        <ul>
+            <li>Nested List</li>
+            <li>Nested List 2</li>
+        </ul>
+    </li>
+
+    <li>2nd Item</li>
+    <li>3rd Item</li>
+    <li>4th Item</li>
+    <li>5th Item</li>
+    </ul>
+    <h1>Ordered List example</h1>
+    <ol type="a" start="12">
+    <li>First Item</li>
+    <li>2nd Item</li>
+    <li>3rd Item</li>
+    <li>4th Item</li>
+    <li>5th Item</li>
+    </ol>
+    <dl>
+        <dt>PTI</dt>
+        <dd>Pakistan Tehreek Insaf</dd>
+        <dt>PDM</dt>
+        <dd>Pakistan Diesel Movement</dd>
+    </dl>
+</html>

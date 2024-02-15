@@ -1,0 +1,46 @@
+table {
+    width: 100%;
+}
+
+table, td {
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+    border-radius: 10px; 
+    border-color: blueviolet;
+    border-spacing: 10px;
+}
+
+/* tr:nth-child(even) { */
+    /* for zebra coloring at even rows */
+    /* background-color: coral; */
+/* } */
+/* tr:nth-child(odd) {
+    /* forbluea coloring at odd rows */
+    /* background-color: blue;
+    color:aliceblue
+} */ 
+/* for zebra coloring at columns */
+td:nth-child(even), td:nth-child(even) {
+    background-color: blueviolet;
+}
+th {
+    text-align:left;
+    background-color: aqua;
+    /* border-style: inset; */
+    /* border-style: dashed; */
+    /* border-style: dotted; */
+    border-style: double;
+}
+tr:hover {background-color: black;}
+th, td {
+    /* to give padding to the table data and header text */
+    /* padding: auto; it is 0px */
+    /* padding:2px */
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom: 10px;
+    /* padding-right:50px; */
+}
+tr {
+    border-bottom: 1px solid brown;
+}

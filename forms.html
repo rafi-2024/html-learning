@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, Javascript">
+        <meta name="Rafi" content="HTMl LEARNING">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://www.w3schools.com/" target="_blank">
+        <title>Form</title>
+        <link rel="icon" type="image/x-icon" href="/images/python.gif">
+        <style>
+
+            </style>
+    </head>
+<body>
+    <!-- input, label, select, textarea, button, fieldset, legend, datalist, output, option, outgroup -->
+    <h1>Login Form</h1>
+    <form action="/action_page.php">
+        <!-- input text -->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname"><br>
+        <!--Input radio button-->
+        <input type="radio" id="html" name="fav_lang" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_lang" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="js" name="fav_lang" value="js">
+        <label for="js">Javascript</label><br>
+        <!-- checkbox -->
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">I have a Bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3">I have a boat</label><br>
+        <!-- Submit Button -->
+        <input type="submit" value="submit">
+    </form>
+    <h2>Second Form with methods</h2>
+    <form action="/action_page.php" method="GET/POST">
+        <!-- input text -->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname"><br>
+        <!-- Dropdown list 
+        size attribute determines how many items are shown from the list-->
+        <!-- muliple allows multiple values -->
+        <label for="cars">Choose a Car: </label>
+        <select id="cars" name="cars" size="1" >
+        <!-- <select id="cars" name="cars" size="1" multiple > -->
+            <option value="fzr-2000">FZR-2000</option>
+            <option value="mclaren">Mechlaren</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="alto" selected>Alto-Mehran</option>
+
+        </select><br>
+        <!-- for multline text input  -->
+        <textarea name="message" rows="4" cols="30">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ducimus quisquam facere. Velit adipisci mollitia temporibus, ducimus fugiat animi voluptate cumque consequuntur eligendi sunt molestiae facere cum quae, esse veritatis!
+        </textarea><br>   
+        <!-- Submit Button -->
+        <input type="submit" value="submit">
+    </form>
+    <h2>Form with auto complete</h2>
+    <form action="/action_page.php" method="GET/POST" autocomplete="off">
+        <fieldset>
+            <legend>Personal Information</legend>
+        
+        <!-- input text -->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname"><br>
+    
+        <!-- Submit Button -->
+        <input type="submit" value="submit"></fieldset>
+    </form>
+    <button type="button" onclick="alert('You tickled Me!')">Click Me !</button>
+    <form action="/action_page.php" >
+        <fieldset>
+            <legend>Datalist</legend>
+        <input list="browsers">
+        <datalist id="browsers">
+             <option value="Edge">
+             <option value="Firefox">
+             <option value="Brave">
+             <option value="Mozilla">
+        </datalist>
+        </fieldset>
+    </form>
+
+</body>               
+</html>
